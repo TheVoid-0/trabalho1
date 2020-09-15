@@ -95,16 +95,3 @@ const $responsiveCarousel = document.querySelector(".js-carousel--responsive");
             }
             position = scroll;
         });
-
-        $(document).ready(function () {
-
-            var aboveHeight = 205;
-
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > aboveHeight) {
-                    $('navbarHeader').addClass('fixed').css('top', '0').next().css('padding-top', '60px');
-                } else {
-                    $('navbarHeader').removeClass('fixed').next().css('padding-top', '0');
-                }
-            });
-        });
